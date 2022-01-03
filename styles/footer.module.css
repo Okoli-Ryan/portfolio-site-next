@@ -1,0 +1,36 @@
+.footer {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-top: 1px solid #262626;
+}
+
+.footer a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #4f99b2;
+}
+
+.contact_list {
+    margin-left: auto;
+    display: flex;
+    gap: 1rem;
+}
+
+@media only screen and (max-width: 425px) {
+    .footer {
+        flex-direction: column;
+        padding: 1rem;
+        justify-content: flex-start;
+    }
+
+    .footer a{
+        text-align: left;
+    }
+
+    .contact_list {
+        margin: 0;
+        margin-top: 1rem;
+    }
+}

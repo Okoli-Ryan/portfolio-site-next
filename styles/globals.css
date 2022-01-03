@@ -1,16 +1,72 @@
-html,
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700&family=Poppins:wght@200;400;700&display=swap');
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 14px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+	/* background: linear-gradient(left, red, white); */
+}
+
+#root,
+body,
+html {
+	overflow-x: hidden;
+  height: 100%;
+	background-color: #e5e5f7;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif !important;
+}
+
+
+h1, h3{
+	margin: 0
+}
+
+button{
+	background: none;
+    border: none;
+    outline: none;
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+}
+
+button:hover{
+	background-color: rgb(99, 99, 99);
+	color: white;
+}
+
+.send-button {
+            padding: 0.8rem 1rem;
+            background-color: #4f99b2;
+            color: white;
+            margin-top: 1rem;
+            font-weight: 800;
+            width: 10rem;
+            border-radius: 10px;
+            font-size: 0.9rem;
+          }
+
+.services-container{
+  /* padding: 1rem; */
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.container{
+  margin-top: 4rem;
+  height: 90%;
+}
+
+.cursor{
+  cursor: pointer;
 }
