@@ -73,7 +73,7 @@ export default function Header() {
               Projects
             </a>
           </Link>
-          <Link href="/projects">
+          <Link href="/services">
             <a
               className="menu-item-desktop"
               style={{
@@ -82,7 +82,7 @@ export default function Header() {
               Services
             </a>
           </Link>
-          <Link href="/projects">
+          <Link href="/contact">
             <a
               className="menu-item-desktop"
               style={{
