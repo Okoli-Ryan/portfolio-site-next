@@ -59,10 +59,10 @@ export default function Card({
             style={{ display: display ? "flex" : "none" }}
             ref={options}>
             <div className="card-options" onClick={goToCode}>
-              Go to Code
+              View Code
             </div>
             <div className="card-options" onClick={goToSite}>
-              Go to Site
+              Go to Project
             </div>
           </div>
         )}
