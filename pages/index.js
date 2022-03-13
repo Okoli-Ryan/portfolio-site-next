@@ -142,11 +142,11 @@ export default function Home() {
           <ul>
             <li className="work-item">
               <h2>
-                Lead Software Engineer at <span>Peddle.ng</span>
+                Lead Software Engineer at Peddle.ng
               </h2>
               <h5>Novemer 2021 - Now</h5>
               <p>
-                I lead a team of developers to the production of an ecommerce
+                I supervise a team of developers in the production of an ecommerce
                 platform for a startup, and make decisions for the facilitation
                 of company growth. I also work with a team of UI/UX developers
                 to convert wireframes into accurate HTML and CSS code, and
