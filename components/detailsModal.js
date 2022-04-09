@@ -56,7 +56,7 @@ export default function DetailsModal({ closeModal, data }) {
             <button
               onClick={() => goToCode(data.gitLink)}
               className={styles.button}>
-              Go to code
+              Go to github
             </button>
             <button
               onClick={() => goToSite(data.siteLink)}
