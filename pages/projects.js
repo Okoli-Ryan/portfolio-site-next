@@ -12,6 +12,7 @@ import Cake from "../public/images/cake-svgrepo-com.svg";
 import Details from "../components/detailsModal";
 import Niger from "../public/images/nigeria-svgrepo-com.svg";
 import Database from "../public/images/database-svgrepo-com.svg";
+import Rocket from "../public/images/rocket.svg";
 import { motion } from "framer-motion";
 import { delayVariant } from "../variants";
 
@@ -53,6 +54,16 @@ export default function Projects() {
             <div className="topic">React Projects</div>
             <div className="card-container">
               <Card
+                title="Cake Ferries"
+                body={Cake}
+                gitLink="https://github.com/Okoli-Ryan/cakeFerries"
+                siteLink="https://cakeferries.herokuapp.com/"
+                disabled={false}
+                description="A landing page + authentication page for a cake delivery company"
+                tools={["react", "css"]}
+                setData={setDetailsState}
+              />
+              <Card
                 title="Mailman"
                 body={Message}
                 gitLink="https://github.com/Okoli-Ryan/Mailman"
@@ -63,16 +74,6 @@ export default function Projects() {
                 setData={setDetailsState}
               />
               <Card
-                title="Todo app + firebase"
-                body={Todo}
-                gitLink="https://github.com/Okoli-Ryan/Timing"
-                siteLink="https://todo-app-with-firebase.herokuapp.com"
-                disabled={false}
-                description="A simple online todo app with authentication and data storage with firebase"
-                tools={["react", "react-hooks", "firebase"]}
-                setData={setDetailsState}
-              />
-              <Card
                 title="Raadio"
                 body={Music}
                 gitLink="https://github.com/Okoli-Ryan/Music-Player"
@@ -80,6 +81,31 @@ export default function Projects() {
                 disabled={false}
                 description="An offline music player loaded with 2 songs"
                 tools={["react", "react-hooks", "css"]}
+                setData={setDetailsState}
+              />
+              <Card
+                title="Space Tourism"
+                body={Rocket}
+                gitLink="https://github.com/Okoli-Ryan/space-tourism"
+                siteLink="https://space-tourism0.herokuapp.com/"
+                disabled={false}
+                description="A four page website about space"
+                tools={[
+                  "react",
+                  "react-hooks",
+                  "framer-motion",
+                  "react-router-dom",
+                ]}
+                setData={setDetailsState}
+              />
+              <Card
+                title="Todo app + firebase"
+                body={Todo}
+                gitLink="https://github.com/Okoli-Ryan/TodoApp"
+                siteLink="https://todo-app-firebase0.herokuapp.com/"
+                disabled={false}
+                description="A simple online todo app with authentication and data storage with firebase"
+                tools={["react", "react-hooks", "firebase"]}
                 setData={setDetailsState}
               />
             </div>
@@ -95,16 +121,7 @@ export default function Projects() {
                 tools={["html", "scss", "webpack", "vanilla javascript"]}
                 setData={setDetailsState}
               />
-              <Card
-                title="Cake Ferries"
-                body={Cake}
-                gitLink="https://github.com/Okoli-Ryan/cakeFerries"
-                siteLink="https://cakeferries.herokuapp.com/"
-                disabled={false}
-                description="A landing page + authentication page for a cake delivery company"
-                tools={["react", "css"]}
-                setData={setDetailsState}
-              />
+
               <Card
                 title="Travel Wise"
                 body={Airplane}
@@ -142,6 +159,7 @@ export default function Projects() {
                   "redux",
                   "react-hooks",
                   "firebase",
+                  "react-navigation",
                 ]}
               />
               <Card
@@ -152,7 +170,13 @@ export default function Projects() {
                 disabled={false}
                 setData={setDetailsState}
                 description="Android Application to update and fill the database for the Wazobia app by collecting textual and audio data. *Accessible from Expo app*"
-                tools={["react-native", "redux", "react-hooks", "firebase"]}
+                tools={[
+                  "react-native",
+                  "redux",
+                  "react-hooks",
+                  "firebase",
+                  "react-navigation",
+                ]}
               />
             </div>
             <div className="topic">
