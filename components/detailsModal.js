@@ -54,8 +54,11 @@ export default function DetailsModal({ closeModal, data }) {
           </div>
           <div className={styles.button_container}>
             <button
+              disabled={!data.gitLink}
               onClick={() => goToCode(data.gitLink)}
-              className={styles.button}>
+              className={` ${!gitlink && styles.button__disabled} ${
+                styles.button
+              }`}>
               Go to github
             </button>
             <button

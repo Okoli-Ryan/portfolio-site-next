@@ -15,7 +15,7 @@ export default function Card({
   const options = useRef(0);
 
   const goToCode = () => {
-    !!gitLink && window.open(gitLink, "_blank");
+    window.open(gitLink, "_blank");
   };
 
   const goToSite = () => {

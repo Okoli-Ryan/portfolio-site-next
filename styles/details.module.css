@@ -109,6 +109,10 @@
     border-radius: 5px;
   }
 
+  .button__disabled {
+      opacity: .7;
+  }
+
   .cancelContainer {
       position: relative;
       width: 100%;
