@@ -15,7 +15,7 @@ export default function Card({
   const options = useRef(0);
 
   const goToCode = () => {
-    window.open(gitLink, "_blank");
+    !!gitLink && window.open(gitLink, "_blank");
   };
 
   const goToSite = () => {
@@ -58,7 +58,9 @@ export default function Card({
             className="card-options-container"
             style={{ display: display ? "flex" : "none" }}
             ref={options}>
-            <div className="card-options" onClick={goToCode}>
+            <div
+              className={`card-options ${!gitLink && "card-options__disabled"}`}
+              onClick={goToCode}>
               View Code
             </div>
             <div className="card-options" onClick={goToSite}>
@@ -148,6 +150,10 @@ export default function Card({
             font-family: "Sarala", sans-serif;
             border-radius: 0.5rem;
             z-index: 2;
+          }
+
+          .card-options__disabled {
+            opacity: .7
           }
 
           .card-body .body-img {

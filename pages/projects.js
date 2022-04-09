@@ -3,8 +3,7 @@ import Card from "../components/card";
 import Message from "../public/images/message.svg";
 import Todo from "../public/images/todoList.svg";
 import Music from "../public/images/music.svg";
-import Weather from "../public/images/weather.svg";
-import Clock from "../public/images/clock.svg";
+import Coin from "../public/images/coin.svg";
 import Airplane from "../public/images/airplane.svg";
 import Result from "../public/images/result.svg";
 import Chart from "../public/images/chart-svgrepo-com.svg";
@@ -123,13 +122,13 @@ export default function Projects() {
               />
 
               <Card
-                title="Travel Wise"
-                body={Airplane}
-                gitLink="https://github.com/Okoli-Ryan/Travel-Wise"
-                siteLink="https://travel-wise.netlify.app"
+                title="Billsclan"
+                body={Coin}
+                gitLink={null}
+                siteLink="https://www.billsclan.com/"
                 disabled={false}
-                description="A landing page for a vacation planning industry"
-                tools={["html", "css", "vanilla javascript"]}
+                description="The landing page for Billsclan, a payment platform"
+                tools={["html", "css", "vanilla javascript", "tailwind"]}
                 setData={setDetailsState}
               />
               <Card
