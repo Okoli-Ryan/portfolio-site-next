@@ -141,16 +141,25 @@ export default function Home() {
           <h1>Experience</h1>
           <ul>
             <li className="work-item">
-              <h2>
-                Lead Software Engineer at Peddle.ng
-              </h2>
+              <h2>Software Developer at MentorTribes</h2>
+              <h5>January 2022 - Now</h5>
+              <p>
+                I develop the front-end aspect of out-sourced projects,
+                including the "Ajot app" (still in development), which is built
+                with React Native and the dashboard built with ReactJs. I also
+                implement designs from Figma files and prototypes in appropriate
+                React JSX.
+              </p>
+            </li>
+            <li className="work-item">
+              <h2>Lead Software Engineer at Peddle.ng</h2>
               <h5>Novemer 2021 - Now</h5>
               <p>
-                I supervise a team of developers in the production of an ecommerce
-                platform for a startup, and make decisions for the facilitation
-                of company growth. I also work with a team of UI/UX developers
-                to convert wireframes into accurate HTML and CSS code, and
-                further translating this code to ReactJS (JSX) syntax.
+                I supervise a team of developers in the production of an
+                ecommerce platform for a startup, and make decisions for the
+                facilitation of company growth. I also work with a team of UI/UX
+                developers to convert wireframes into accurate HTML and CSS
+                code, and further translating this code to ReactJS (JSX) syntax.
               </p>
             </li>
             <li className="work-item">
