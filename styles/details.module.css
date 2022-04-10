@@ -110,7 +110,11 @@
   }
 
   .button__disabled {
-      opacity: .7;
+      opacity: .7 !important;
+  }
+
+  .button__disabled:hover {
+      background-color: unset !important;
   }
 
   .cancelContainer {

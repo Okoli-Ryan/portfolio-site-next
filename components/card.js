@@ -53,21 +53,6 @@ export default function Card({
           </div>
         </div>
         <div className="card-title">{title}</div>
-        {!disabled && (
-          <div
-            className="card-options-container"
-            style={{ display: display ? "flex" : "none" }}
-            ref={options}>
-            <div
-              className={`card-options ${!gitLink && "card-options__disabled"}`}
-              onClick={goToCode}>
-              View Code
-            </div>
-            <div className="card-options" onClick={goToSite}>
-              Go to Project
-            </div>
-          </div>
-        )}
       </div>
       <style jsx>
         {`
