@@ -152,7 +152,7 @@ export default function Home() {
               </p>
             </li>
             <li className="work-item">
-              <h2>Lead Software Engineer at Peddle.ng</h2>
+              <h2>Software Engineer at Peddle.ng</h2>
               <h5>Novemer 2021 - Now</h5>
               <p>
                 I supervise a team of developers in the production of an
