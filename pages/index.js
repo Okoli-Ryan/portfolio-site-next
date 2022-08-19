@@ -141,6 +141,32 @@ export default function Home() {
           <h1>Experience</h1>
           <ul>
             <li className="work-item">
+              <h2>
+                Software Developer at{" "}
+                <span
+                  onClick={() => window.open("https://ivorypay.io", "_blank")}>
+                  IvoryPay
+                </span>
+              </h2>
+              <h5>June 2022 - Now</h5>
+              <p>
+                I participated in the development of the IvoryPay website (a
+                crypto-payment gateway), developed web pages from UI wireframes
+                using ReactJS and TypeScript.
+              </p>
+              <p>
+                I also managed the integration of the Merchant Storefront on
+                their dashboard and handled the UI development and backend
+                integration of fetching test crytpo token on the{" "}
+                <span
+                  onClick={() =>
+                    window.open("https://www.ivorypay.io/get-tokens", "_blank")
+                  }>
+                  IvoryPay website
+                </span>
+              </p>
+            </li>
+            <li className="work-item">
               <h2>Software Developer at MentorTribes</h2>
               <h5>January 2022 - Now</h5>
               <p>
@@ -151,38 +177,18 @@ export default function Home() {
                 React JSX.
               </p>
             </li>
-            <li className="work-item">
-              <h2>Software Engineer at Peddle.ng</h2>
-              <h5>Novemer 2021 - Now</h5>
-              <p>
-                I supervise a team of developers in the production of an
-                ecommerce platform for a startup, and make decisions for the
-                facilitation of company growth. I also work with a team of UI/UX
-                developers to convert wireframes into accurate HTML and CSS
-                code, and further translating this code to ReactJS (JSX) syntax.
-              </p>
-            </li>
-            <li className="work-item">
-              <h2>
-                Software Engineering Intern at <span>Eazox</span>
-              </h2>
-              <h5>June 2020 - May 2021</h5>
-              <p>
-                I served as an intern where I participated in the development of
-                the company app using React-Native. I was also in charge of
-                organizing the backend of the system with Firebase and I
-                organized and constructed the navigation structure of the app
-                with the React-Navigation module. During this timeline, I was
-                subjected to code reviews by the senior developer.
-              </p>
-            </li>
           </ul>
           <h1>Education</h1>
           <ul>
             <li className="work-item">
               <h2>
                 Computer Engineering Student at{" "}
-                <span>Obafemi Awolowo University, Ile-Ife</span>
+                <span
+                  onClick={() =>
+                    window.open("https://oauife.edu.ng/", "_blank")
+                  }>
+                  Obafemi Awolowo University, Ile-Ife
+                </span>
               </h2>
               <h5>August 2016 - November 2021</h5>
               <p>
@@ -377,6 +383,7 @@ export default function Home() {
 
         .work-container span {
           color: #4f99b2;
+          cursor: pointer;
         }
 
         .work-container h5 {

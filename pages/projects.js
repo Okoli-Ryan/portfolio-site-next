@@ -50,6 +50,28 @@ export default function Projects() {
         <div className="scroll">
           <div className="cont" ref={cont} style={{ height: "4.5rem" }}></div>
           <div className="services-container">
+            <div className="topic">Fullstack Projects</div>
+            <div className="card-container">
+              <Card
+                title="Billsclan.Shop"
+                body={Coin}
+                gitLink={null}
+                siteLink="https://www.billsclan.shop/figocard"
+                disabled={false}
+                description="Storefront where users can buy goods and services online"
+                tools={[
+                  "html",
+                  "css",
+                  "ReactJs",
+                  "Bootstrap 5",
+                  ".NET 6",
+                  "Postgres SQL",
+                  "PayStack",
+                  "Flutterwave",
+                ]}
+                setData={setDetailsState}
+              />
+            </div>
             <div className="topic">React Projects</div>
             <div className="card-container">
               <Card
@@ -121,16 +143,6 @@ export default function Projects() {
                 setData={setDetailsState}
               />
 
-              <Card
-                title="Billsclan"
-                body={Coin}
-                gitLink={null}
-                siteLink="https://www.billsclan.com/"
-                disabled={false}
-                description="The landing page for Billsclan, a payment platform"
-                tools={["html", "css", "vanilla javascript", "tailwind"]}
-                setData={setDetailsState}
-              />
               <Card
                 title="Waec Result Checker"
                 body={Result}
