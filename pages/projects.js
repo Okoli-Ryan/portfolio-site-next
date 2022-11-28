@@ -56,7 +56,7 @@ export default function Projects() {
                 title="Billsclan.Shop"
                 body={Coin}
                 gitLink={null}
-                siteLink="https://www.billsclan.shop/figocard"
+                siteLink="https://billsclan.shop/figocard"
                 disabled={false}
                 description="Storefront where users can buy goods and services online"
                 tools={[
