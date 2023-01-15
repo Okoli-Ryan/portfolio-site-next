@@ -78,7 +78,7 @@ export default function Projects() {
                 title="Cake Ferries"
                 body={Cake}
                 gitLink="https://github.com/Okoli-Ryan/cakeFerries"
-                siteLink="https://cakeferries.herokuapp.com/"
+                siteLink="https://cake-ferries-xnhn-git-vite-okoliryan50-gmailcom.vercel.app/"
                 disabled={false}
                 description="A landing page + authentication page for a cake delivery company"
                 tools={["react", "css"]}
