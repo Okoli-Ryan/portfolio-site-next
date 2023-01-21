@@ -88,7 +88,7 @@ export default function Projects() {
                 title="Mailman"
                 body={Message}
                 gitLink="https://github.com/Okoli-Ryan/Mailman"
-                siteLink="https://mailman.herokuapp.com"
+                siteLink="https://mailman-dusky.vercel.app"
                 disabled={false}
                 tools={["redux", "reactJs", "react-hooks", "firebase"]}
                 description="A real-time chatting application built using ReactJS, Redux for state management and firebase firestore"
@@ -98,7 +98,7 @@ export default function Projects() {
                 title="Raadio"
                 body={Music}
                 gitLink="https://github.com/Okoli-Ryan/Music-Player"
-                siteLink="https://music-player-concept.herokuapp.com"
+                siteLink="https://raadio.vercel.app"
                 disabled={false}
                 description="An offline music player loaded with 2 songs"
                 tools={["react", "react-hooks", "css"]}
@@ -108,7 +108,7 @@ export default function Projects() {
                 title="Space Tourism"
                 body={Rocket}
                 gitLink="https://github.com/Okoli-Ryan/space-tourism"
-                siteLink="https://space-tourism0.herokuapp.com/"
+                siteLink="https://space-tourism-omega-three.vercel.app"
                 disabled={false}
                 description="A four page website about space"
                 tools={[
@@ -119,16 +119,7 @@ export default function Projects() {
                 ]}
                 setData={setDetailsState}
               />
-              <Card
-                title="Todo app + firebase"
-                body={Todo}
-                gitLink="https://github.com/Okoli-Ryan/TodoApp"
-                siteLink="https://todo-app-firebase0.herokuapp.com/"
-                disabled={false}
-                description="A simple online todo app with authentication and data storage with firebase"
-                tools={["react", "react-hooks", "firebase"]}
-                setData={setDetailsState}
-              />
+              
             </div>
             <div className="topic">Web Designs</div>
             <div className="card-container">
