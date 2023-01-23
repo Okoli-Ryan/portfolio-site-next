@@ -15,180 +15,180 @@ import Rocket from "../public/images/rocket.svg";
 import { motion } from "framer-motion";
 import { delayVariant } from "../variants";
 
+import { BsCoin } from "react-icons/bs";
+import { HiCake } from "react-icons/hi";
+import { RiMessage2Fill } from "react-icons/ri";
+
 export default function Projects() {
-  const [detailsState, setDetailsState] = useState({
-    display: false,
-    data: null,
-  });
+	const [detailsState, setDetailsState] = useState({
+		display: false,
+		data: null,
+	});
 
-  const closeModal = () => {
-    setDetailsState((prev) => {
-      return { ...prev, display: false };
-    });
-  };
-  const goToGithub = () => {
-    window.open("https://github.com/Okoli-Ryan?tab=repositories", "_blank");
-  };
+	const closeModal = () => {
+		setDetailsState((prev) => {
+			return { ...prev, display: false };
+		});
+	};
+	const goToGithub = () => {
+		window.open("https://github.com/Okoli-Ryan?tab=repositories", "_blank");
+	};
 
-  const cont = useRef(0);
+	const cont = useRef(0);
 
-  useEffect(() => {
-    cont.current.scrollIntoView();
-  }, []);
+	useEffect(() => {
+		cont.current.scrollIntoView();
+	}, []);
 
-  return (
-    <>
-      {detailsState.display && (
-        <Details closeModal={closeModal} data={detailsState.data} />
-      )}
-      <motion.div
-        variants={delayVariant}
-        exit="exit"
-        initial="initial"
-        animate="enter"
-        transition="transition">
-        <div className="scroll">
-          <div className="cont" ref={cont} style={{ height: "4.5rem" }}></div>
-          <div className="services-container">
-            <div className="topic">Fullstack Projects</div>
-            <div className="card-container">
-              <Card
-                title="Billsclan.Shop"
-                body={Coin}
-                gitLink={null}
-                siteLink="https://billsclan.shop/figocard"
-                disabled={false}
-                description="Storefront where users can buy goods and services online"
-                tools={[
-                  "html",
-                  "css",
-                  "ReactJs",
-                  "Bootstrap 5",
-                  ".NET 6",
-                  "Postgres SQL",
-                  "PayStack",
-                  "Flutterwave",
-                ]}
-                setData={setDetailsState}
-              />
-            </div>
-            <div className="topic">React Projects</div>
-            <div className="card-container">
-              <Card
-                title="Cake Ferries"
-                body={Cake}
-                gitLink="https://github.com/Okoli-Ryan/cakeFerries"
-                siteLink="https://cake-ferries-xnhn-git-vite-okoliryan50-gmailcom.vercel.app/"
-                disabled={false}
-                description="A landing page + authentication page for a cake delivery company"
-                tools={["react", "css"]}
-                setData={setDetailsState}
-              />
-              <Card
-                title="Mailman"
-                body={Message}
-                gitLink="https://github.com/Okoli-Ryan/Mailman"
-                siteLink="https://mailman-dusky.vercel.app"
-                disabled={false}
-                tools={["redux", "reactJs", "react-hooks", "firebase"]}
-                description="A real-time chatting application built using ReactJS, Redux for state management and firebase firestore"
-                setData={setDetailsState}
-              />
-              <Card
-                title="Raadio"
-                body={Music}
-                gitLink="https://github.com/Okoli-Ryan/Music-Player"
-                siteLink="https://raadio.vercel.app"
-                disabled={false}
-                description="An offline music player loaded with 2 songs"
-                tools={["react", "react-hooks", "css"]}
-                setData={setDetailsState}
-              />
-              <Card
-                title="Space Tourism"
-                body={Rocket}
-                gitLink="https://github.com/Okoli-Ryan/space-tourism"
-                siteLink="https://space-tourism-omega-three.vercel.app"
-                disabled={false}
-                description="A four page website about space"
-                tools={[
-                  "react",
-                  "react-hooks",
-                  "framer-motion",
-                  "react-router-dom",
-                ]}
-                setData={setDetailsState}
-              />
-              
-            </div>
-            <div className="topic">Web Designs</div>
-            <div className="card-container">
-              <Card
-                title="Click-up Challenge"
-                body={Chart}
-                gitLink="https://github.com/Okoli-Ryan/Clickup-Challenge"
-                siteLink="https://clickup-challenge.netlify.app/"
-                disabled={false}
-                description="A landing page challenge from Clickup"
-                tools={["html", "scss", "webpack", "vanilla javascript"]}
-                setData={setDetailsState}
-              />
+	return (
+		<>
+			{detailsState.display && <Details closeModal={closeModal} data={detailsState.data} />}
+			<motion.div
+				variants={delayVariant}
+				exit="exit"
+				initial="initial"
+				animate="enter"
+				transition="transition">
+				<div className="scroll">
+					<div className="cont" ref={cont} style={{ height: "4.5rem" }}></div>
+					<div className="services-container">
+						<div className="topic">Fullstack Projects</div>
+						<div className="card-container">
+							<Card
+								title="Billsclan.Shop"
+								body={Coin}
+								gitLink={null}
+								siteLink="https://billsclan.shop/figocard"
+								disabled={false}
+								description="Storefront where users can buy goods and services online"
+								tools={[
+									"html",
+									"css",
+									"ReactJs",
+									"Bootstrap 5",
+									".NET 6",
+									"Postgres SQL",
+									"PayStack",
+									"Flutterwave",
+								]}
+								setData={setDetailsState}
+							/>
+						</div>
+						<div className="topic">React Projects</div>
+						<div className="card-container">
+							<Card
+								title="Cake Ferries"
+								body={Cake}
+								gitLink="https://github.com/Okoli-Ryan/cakeFerries"
+								siteLink="https://cake-ferries-xnhn-git-vite-okoliryan50-gmailcom.vercel.app/"
+								disabled={false}
+								description="A landing page + authentication page for a cake delivery company"
+								tools={["react", "css"]}
+								setData={setDetailsState}
+							/>
+							<Card
+								title="Mailman"
+								body={Message}
+								gitLink="https://github.com/Okoli-Ryan/Mailman"
+								siteLink="https://mailman-dusky.vercel.app"
+								disabled={false}
+								tools={["redux", "reactJs", "react-hooks", "firebase"]}
+								description="A real-time chatting application built using ReactJS, Redux for state management and firebase firestore"
+								setData={setDetailsState}
+							/>
+							<Card
+								title="Raadio"
+								body={Music}
+								gitLink="https://github.com/Okoli-Ryan/Music-Player"
+								siteLink="https://raadio.vercel.app"
+								disabled={false}
+								description="An offline music player loaded with 2 songs"
+								tools={["react", "react-hooks", "css"]}
+								setData={setDetailsState}
+							/>
+							<Card
+								title="Space Tourism"
+								body={Rocket}
+								gitLink="https://github.com/Okoli-Ryan/space-tourism"
+								siteLink="https://space-tourism-omega-three.vercel.app"
+								disabled={false}
+								description="A four page website about space"
+								tools={[
+									"react",
+									"react-hooks",
+									"framer-motion",
+									"react-router-dom",
+								]}
+								setData={setDetailsState}
+							/>
+						</div>
+						<div className="topic">Web Designs</div>
+						<div className="card-container">
+							<Card
+								title="Click-up Challenge"
+								body={Chart}
+								gitLink="https://github.com/Okoli-Ryan/Clickup-Challenge"
+								siteLink="https://clickup-challenge.netlify.app/"
+								disabled={false}
+								description="A landing page challenge from Clickup"
+								tools={["html", "scss", "webpack", "vanilla javascript"]}
+								setData={setDetailsState}
+							/>
 
-              <Card
-                title="Waec Result Checker"
-                body={Result}
-                gitLink="https://github.com/Okoli-Ryan/Waec-Demo"
-                siteLink="https://waec-result-checker.netlify.app"
-                disabled={false}
-                description="Remake of the waec result checker website: https://www.waecdirect.org"
-                tools={["html", "css", "jquery", "bootstrap"]}
-                setData={setDetailsState}
-              />
-            </div>
-            <div className="topic">React Native Projects</div>
-            <div className="card-container">
-              <Card
-                title="Wazobia app"
-                body={Niger}
-                gitLink="https://github.com/Okoli-Ryan/9japedia"
-                siteLink="https://exp.host/@okoliryan50/Naijapedia/index.exp?sdkVersion=42.0.0"
-                disabled={false}
-                setData={setDetailsState}
-                description="An Android multimedia encyclopaedia for Nigeria in its 3 main languages: Hausa, Igbo and Yoruba. *Accessible from Expo app*"
-                tools={[
-                  "react-native",
-                  "expo",
-                  "redux",
-                  "react-hooks",
-                  "firebase",
-                  "react-navigation",
-                ]}
-              />
-              <Card
-                title="Inputpedia app"
-                body={Database}
-                gitLink="https://github.com/Okoli-Ryan/Inputpedia"
-                siteLink="https://exp.host/@okoliryan50/InputPedia/index.exp?sdkVersion=42.0.0"
-                disabled={false}
-                setData={setDetailsState}
-                description="Android Application to update and fill the database for the Wazobia app by collecting textual and audio data. *Accessible from Expo app*"
-                tools={[
-                  "react-native",
-                  "redux",
-                  "react-hooks",
-                  "firebase",
-                  "react-navigation",
-                ]}
-              />
-            </div>
-            <div className="topic">
-              Check out more on my{" "}
-              <span onClick={goToGithub}>github page!</span>
-            </div>
-          </div>
-        </div>
-        <style jsx>
-          {`
+							<Card
+								title="Waec Result Checker"
+								body={Result}
+								gitLink="https://github.com/Okoli-Ryan/Waec-Demo"
+								siteLink="https://waec-result-checker.netlify.app"
+								disabled={false}
+								description="Remake of the waec result checker website: https://www.waecdirect.org"
+								tools={["html", "css", "jquery", "bootstrap"]}
+								setData={setDetailsState}
+							/>
+						</div>
+						<div className="topic">React Native Projects</div>
+						<div className="card-container">
+							<Card
+								title="Wazobia app"
+								body={Niger}
+								gitLink="https://github.com/Okoli-Ryan/9japedia"
+								siteLink="https://exp.host/@okoliryan50/Naijapedia/index.exp?sdkVersion=42.0.0"
+								disabled={false}
+								setData={setDetailsState}
+								description="An Android multimedia encyclopaedia for Nigeria in its 3 main languages: Hausa, Igbo and Yoruba. *Accessible from Expo app*"
+								tools={[
+									"react-native",
+									"expo",
+									"redux",
+									"react-hooks",
+									"firebase",
+									"react-navigation",
+								]}
+							/>
+							<Card
+								title="Inputpedia app"
+								body={Database}
+								gitLink="https://github.com/Okoli-Ryan/Inputpedia"
+								siteLink="https://exp.host/@okoliryan50/InputPedia/index.exp?sdkVersion=42.0.0"
+								disabled={false}
+								setData={setDetailsState}
+								description="Android Application to update and fill the database for the Wazobia app by collecting textual and audio data. *Accessible from Expo app*"
+								tools={[
+									"react-native",
+									"redux",
+									"react-hooks",
+									"firebase",
+									"react-navigation",
+								]}
+							/>
+						</div>
+						<div className="topic">
+							Check out more on my <span onClick={goToGithub}>github page!</span>
+						</div>
+					</div>
+				</div>
+				<style jsx>
+					{`
         .card-container {
             display: flex;
             flex-direction: row;
@@ -196,12 +196,10 @@ export default function Projects() {
             justify-content: space-around;
             margin: 0 0 1rem 0;
           }
-
           .topic span {
             color: #4f99b2;
             cursor: pointer;
           }
-
           .topic {
             font-size: 2.5rem;
             text-align: center;
@@ -211,7 +209,6 @@ export default function Projects() {
               "Helvetica Neue", sans-serif;
             font-weight: 800;
           }
-
           @media only screen and (min-width: 576px) {
             .topic {
               font-size: 2.5rem;
@@ -221,8 +218,140 @@ export default function Projects() {
 	.card-container{
 		justify-content: flex-start;
 	} */`}
-        </style>
-      </motion.div>
-    </>
-  );
+				</style>
+			</motion.div>
+		</>
+	);
 }
+
+const projectList = [
+	{
+		header: "Full stack projects",
+		projects: [
+			{
+				title: "Billsclan.Shop",
+				body: BsCoin,
+				siteLink: "https://billsclan.shop/figocard",
+				disabled: false,
+				description: "Storefront where users can buy goods and services online",
+				tools: [
+					"html",
+					"css",
+					"ReactJs",
+					"Bootstrap 5",
+					".NET 6",
+					"Postgres SQL",
+					"PayStack",
+					"Flutterwave",
+				],
+			},
+		],
+	},
+	{
+		header: "React Projects",
+		projects: [
+			{
+				title: "Cake Ferries",
+				body: HiCake,
+				gitLink: "https://github.com/Okoli-Ryan/cakeFerries",
+				siteLink: "https://cakeferries.herokuapp.com/",
+				disabled: false,
+				description: "A landing page + authentication page for a cake delivery company",
+				tools: ["react", "css"],
+			},
+			{
+				title: "Mailman",
+				body: Message,
+				gitLink: "https://github.com/Okoli-Ryan/Mailman",
+				siteLink: "https://mailman-dusky.vercel.app",
+				disabled: false,
+				tools: ["redux", "reactJs", "react-hooks", "firebase"],
+				description:
+					"A real-time chatting application built using ReactJS, Redux for state management and firebase firestore",
+			},
+			{
+				title: "Raadio",
+				body: Music,
+				gitLink: "https://github.com/Okoli-Ryan/Music-Player",
+				siteLink: "https://raadio.vercel.app",
+				disabled: false,
+				description: "An offline music player loaded with 2 songs",
+				tools: ["react", "react-hooks", "css"],
+			},
+			{
+				title: "Space Tourism",
+				body: Rocket,
+				gitLink: "https://github.com/Okoli-Ryan/space-tourism",
+				siteLink: "https://space-tourism-omega-three.vercel.app",
+				disabled: false,
+				description: "A four page website about space",
+				tools: ["react", "react-hooks", "framer-motion", "react-router-dom"],
+			},
+		],
+	},
+	{
+		header: "Web Designs",
+		projects: [
+			{
+				title: "TeamFlow",
+				body: Rocket,
+				gitLink: "https://github.com/Okoli-Ryan/Teamflow",
+				siteLink: "teamflow-six.vercel.app",
+				disabled: false,
+				description: "Landing Page for a Productivity platform",
+				tools: ["react", "react-hooks", "AntD", "TailwindCSS"],
+			},
+			{
+				title: "Click-up Challenge",
+				body: Chart,
+				gitLink: "https://github.com/Okoli-Ryan/Clickup-Challenge",
+				siteLink: "https://clickup-challenge.netlify.app/",
+				disabled: false,
+				description: "A landing page challenge from Clickup",
+				tools: ["html", "scss", "webpack", "vanilla javascript"],
+			},
+			{
+				title: "Waec Result Checker",
+				body: Result,
+				gitLink: "https://github.com/Okoli-Ryan/Waec-Demo",
+				siteLink: "https://waec-result-checker.netlify.app",
+				disabled: false,
+				description:
+					"Remake of the waec result checker website: https://www.waecdirect.org",
+				tools: ["html", "css", "jquery", "bootstrap"],
+			},
+		],
+	},
+	{
+		header: "React Native Projects",
+		projects: [
+			{
+				title: "Wazobia app",
+				body: Niger,
+				gitLink: "https://github.com/Okoli-Ryan/9japedia",
+				siteLink: "https://exp.host/@okoliryan50/Naijapedia/index.exp?sdkVersion:42.0.0",
+				disabled: false,
+				description:
+					"An Android multimedia encyclopaedia for Nigeria in its 3 main languages: Hausa, Igbo and Yoruba. *Accessible from Expo app*",
+				tools: [
+					"react-native",
+					"expo",
+					"redux",
+					"react-hooks",
+					"firebase",
+					"react-navigation",
+				],
+			},
+			{
+				title: "Inputpedia app",
+				body: Database,
+				gitLink: "https://github.com/Okoli-Ryan/Inputpedia",
+				siteLink: "https://exp.host/@okoliryan50/InputPedia/index.exp?sdkVersion:42.0.0",
+				disabled: false,
+				description:
+					"Android Application to update and fill the database for the Wazobia app by collecting textual and audio data. *Accessible from Expo app*",
+				tools: ["react-native", "redux", "react-hooks", "firebase", "react-navigation"],
+			},
+		],
+	},
+];
