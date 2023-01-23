@@ -1,10 +1,8 @@
 import React, { useRef, useEffect, useState } from "react";
 import Card from "../components/card";
 import Message from "../public/images/message.svg";
-import Todo from "../public/images/todoList.svg";
 import Music from "../public/images/music.svg";
 import Coin from "../public/images/coin.svg";
-import Airplane from "../public/images/airplane.svg";
 import Result from "../public/images/result.svg";
 import Chart from "../public/images/chart-svgrepo-com.svg";
 import Cake from "../public/images/cake-svgrepo-com.svg";
@@ -12,12 +10,10 @@ import Details from "../components/detailsModal";
 import Niger from "../public/images/nigeria-svgrepo-com.svg";
 import Database from "../public/images/database-svgrepo-com.svg";
 import Rocket from "../public/images/rocket.svg";
+import LineChart from "../public/images/line-chart-chart-svgrepo-com.svg";
 import { motion } from "framer-motion";
 import { delayVariant } from "../variants";
-
-import { BsCoin } from "react-icons/bs";
-import { HiCake } from "react-icons/hi";
-import { RiMessage2Fill } from "react-icons/ri";
+import { useCallback } from "react";
 
 export default function Projects() {
 	const [detailsState, setDetailsState] = useState({
@@ -36,6 +32,13 @@ export default function Projects() {
 
 	const cont = useRef(0);
 
+	const setDetailsModalData = useCallback((project) => {
+		setDetailsState({
+			display: true,
+			data: project,
+		});
+	}, []);
+
 	useEffect(() => {
 		cont.current.scrollIntoView();
 	}, []);
@@ -52,7 +55,18 @@ export default function Projects() {
 				<div className="scroll">
 					<div className="cont" ref={cont} style={{ height: "4.5rem" }}></div>
 					<div className="services-container">
-						<div className="topic">Fullstack Projects</div>
+						{projectCategoryList.map(({ projects, header }) => (
+							<>
+								<div className="topic">{header}</div>
+								<div className="card-container">
+									<ProjectListComponent
+										projects={projects}
+										setDetailsModalData={setDetailsModalData}
+									/>
+								</div>
+							</>
+						))}
+						{/* <div className="topic">Fullstack Projects</div>
 						<div className="card-container">
 							<Card
 								title="Billsclan.Shop"
@@ -181,7 +195,7 @@ export default function Projects() {
 									"react-navigation",
 								]}
 							/>
-						</div>
+						</div> */}
 						<div className="topic">
 							Check out more on my <span onClick={goToGithub}>github page!</span>
 						</div>
@@ -224,13 +238,23 @@ export default function Projects() {
 	);
 }
 
-const projectList = [
+function ProjectListComponent({ projects, setDetailsModalData }) {
+	return (
+		<>
+			{projects.map((project) => (
+				<Card {...project} setDetailsModalData={setDetailsModalData} key={project.title} />
+			))}
+		</>
+	);
+}
+
+const projectCategoryList = [
 	{
 		header: "Full stack projects",
 		projects: [
 			{
 				title: "Billsclan.Shop",
-				body: BsCoin,
+				body: Coin,
 				siteLink: "https://billsclan.shop/figocard",
 				disabled: false,
 				description: "Storefront where users can buy goods and services online",
@@ -252,9 +276,9 @@ const projectList = [
 		projects: [
 			{
 				title: "Cake Ferries",
-				body: HiCake,
+				body: Cake,
 				gitLink: "https://github.com/Okoli-Ryan/cakeFerries",
-				siteLink: "https://cakeferries.herokuapp.com/",
+				siteLink: "https://cake-ferries-xnhn.vercel.app/",
 				disabled: false,
 				description: "A landing page + authentication page for a cake delivery company",
 				tools: ["react", "css"],
@@ -294,9 +318,9 @@ const projectList = [
 		projects: [
 			{
 				title: "TeamFlow",
-				body: Rocket,
+				body: LineChart,
 				gitLink: "https://github.com/Okoli-Ryan/Teamflow",
-				siteLink: "teamflow-six.vercel.app",
+				siteLink: "https://teamflow-six.vercel.app",
 				disabled: false,
 				description: "Landing Page for a Productivity platform",
 				tools: ["react", "react-hooks", "AntD", "TailwindCSS"],

@@ -2,60 +2,47 @@ import React, { useState, useRef } from "react";
 import Image from "next/image";
 
 export default function Card({
-  title,
-  body,
-  gitLink,
-  siteLink,
-  tools,
-  description,
-  disabled,
-  setData,
+	title,
+	body,
+	gitLink,
+	disabled,
+	siteLink,
+	tools,
+	description,
+	setDetailsModalData,
 }) {
-  const [display, setDisplay] = useState(false);
-  const options = useRef(0);
-
-  const goToCode = () => {
-    window.open(gitLink, "_blank");
-  };
-
-  const goToSite = () => {
-    window.open(siteLink, "_blank");
-  };
-
-  return (
-    <>
-      <div
-        className="card cursor"
-        onClick={() => {
-          if (!disabled)
-            setData({
-              display: true,
-              data: {
-                title,
-                tools,
-                description,
-                body,
-                gitLink,
-                siteLink,
-              },
-            });
-        }}>
-        <div className="card-body">
-          <div className="body-img">
-            <Image
-              width="10vw"
-              height="8vw"
-              className="avatar"
-              layout="responsive"
-              src={body}
-              alt="project icon"
-            />
-          </div>
-        </div>
-        <div className="card-title">{title}</div>
-      </div>
-      <style jsx>
-        {`
+	return (
+		<>
+			<div
+				className="card cursor"
+				onClick={() => {
+					if (!disabled)
+						setDetailsModalData({
+							title,
+							tools,
+							description,
+							disabled,
+							body,
+							gitLink,
+							siteLink,
+						});
+				}}>
+				<div className="card-body">
+					<div className="body-img">
+						<Image
+							width="150rem"
+							height="150rem"
+							className="avatar"
+							layout="fixed"
+							src={body}
+							alt="project icon"
+						/>
+					</div>
+				</div>
+				<div className="card-title">{title}</div>
+			</div>
+			<style jsx>
+				{`
           .card {
             width: 15rem;
             /* width: 100%; */
@@ -162,10 +149,6 @@ export default function Card({
             }
           }
 
-          
-
-          
-
             .card {
               margin-right: 1rem;
             }
@@ -177,7 +160,7 @@ export default function Card({
             }
           }
         `}
-      </style>
-    </>
-  );
+			</style>
+		</>
+	);
 }
