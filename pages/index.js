@@ -142,7 +142,9 @@ export default function Home() {
 						<li className="work-item">
 							<h2>
 								Software Developer at{" "}
-								<span onClick={() => window.open("https://ivorypay.io", "_blank")}>
+								<span
+									className="cursor-pointer"
+									onClick={() => window.open("https://ivorypay.io", "_blank")}>
 									IvoryPay
 								</span>
 							</h2>
@@ -161,7 +163,7 @@ export default function Home() {
 											"_blank"
 										)
 									}>
-									react-native-ivorypay
+									react-native-ivorypay{" "}
 								</span>
 								npm package, which enables businesses accept crypto payment in their
 								ios and android apps.
@@ -169,7 +171,7 @@ export default function Home() {
 							<p>
 								I also managed the integration of the Merchant Storefront on their
 								dashboard and handled the UI development and backend integration of
-								fetching test crytpo token on the{" "}
+								fetching test cypto token on the{" "}
 								<span
 									onClick={() =>
 										window.open("https://www.ivorypay.io/get-tokens", "_blank")
@@ -179,7 +181,14 @@ export default function Home() {
 							</p>
 						</li>
 						<li className="work-item">
-							<h2>Software Developer at MentorTribes</h2>
+							<h2>
+								Software Developer at{" "}
+								<span
+									className="cursor-pointer"
+									onClick={() => window.open("https://ivorypay.io", "_blank")}>
+									Mentortribes
+								</span>
+							</h2>
 							<h5>January 2022 - Now</h5>
 							<p>
 								I develop the front-end aspect of out-sourced projects, including
