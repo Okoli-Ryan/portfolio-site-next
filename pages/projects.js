@@ -15,6 +15,7 @@ import LineChart from "../public/images/line-chart-chart-svgrepo-com.svg";
 import { motion } from "framer-motion";
 import { delayVariant } from "../variants";
 import { useCallback } from "react";
+import NigeriteLogo from "../public/images/etex-site.png";
 
 export default function Projects() {
 	const [detailsState, setDetailsState] = useState({
@@ -229,6 +230,15 @@ const projectCategoryList = [
 	{
 		header: "React Native Projects",
 		projects: [
+			{
+				title: "Nigerite Emenite",
+				body: NigeriteLogo,
+				// gitLink: "https://github.com/Okoli-Ryan/9japedia",
+				siteLink: "https://play.google.com/store/apps/details?id=com.etex.nigeriteetex",
+				disabled: false,
+				description: "Android and ios app for Nigerite Emenite company",
+				tools: ["react-native", "redux", "react-hooks", "firebase", "react-navigation"],
+			},
 			{
 				title: "Wazobia app",
 				body: Niger,

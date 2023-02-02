@@ -22,11 +22,12 @@ return (
 				<div className={styles.preview_container}>
 					<div className={styles.preview}>
 						<Image
-							width="100%"
-							height="100%"
+							width="150rem"
+							objectFit="contain"
+							height="150rem"
 							src={data.body}
 							alt="project icon"
-							layout="fill"
+							layout="fixed"
 						/>
 					</div>
 				</div>

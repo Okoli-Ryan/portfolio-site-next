@@ -32,6 +32,7 @@ export default function Card({
 						<Image
 							width="150rem"
 							height="150rem"
+							objectFit="contain"
 							className="avatar"
 							layout="fixed"
 							src={body}
@@ -43,6 +44,10 @@ export default function Card({
 			</div>
 			<style jsx>
 				{`
+                img.avatar{
+                    object-fit: contain !important;
+                }
+
           .card {
             width: 15rem;
             /* width: 100%; */
@@ -133,6 +138,10 @@ export default function Card({
             height: 100%;
             position: relative;
             /* animation: pulse 1s infinite alternate; */
+          }
+
+          .body-img img{
+            object-fit: contain
           }
 
           .card:hover .body-img {
