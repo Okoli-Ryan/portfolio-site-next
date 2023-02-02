@@ -242,8 +242,8 @@ const projectCategoryList = [
 			{
 				title: "Wazobia app",
 				body: Niger,
-				gitLink: "https://github.com/Okoli-Ryan/9japedia",
-				siteLink: "https://exp.host/@okoliryan50/Naijapedia/index.exp?sdkVersion:42.0.0",
+				gitLink: "https://github.com/Okoli-Ryan/Wazobia",
+				siteLink: "https://drive.google.com/drive/folders/1P-TXwFY0tXMU4xvfo4sk-XAYJ_DknbUT?usp=share_link",
 				disabled: false,
 				description:
 					"An Android multimedia encyclopaedia for Nigeria in its 3 main languages: Hausa, Igbo and Yoruba. *Accessible from Expo app*",
@@ -260,7 +260,7 @@ const projectCategoryList = [
 				title: "Inputpedia app",
 				body: Database,
 				gitLink: "https://github.com/Okoli-Ryan/Inputpedia",
-				siteLink: "https://exp.host/@okoliryan50/InputPedia/index.exp?sdkVersion:42.0.0",
+				siteLink: "https://drive.google.com/drive/folders/1JcOIQJfw_ZNW8NgfxnGreNZGm4z_-LBl?usp=share_link",
 				disabled: false,
 				description:
 					"Android Application to update and fill the database for the Wazobia app by collecting textual and audio data. *Accessible from Expo app*",
