@@ -37,7 +37,7 @@ export default function Home() {
 				transition="transition">
 				<div className="hero-image">
 					<div className="hero-container">
-						<h1>Okoli Ugochukwu</h1>
+						<h1>Ugochukwu Okoli</h1>
 						<h3>Web || Mobile Developer</h3>
 					</div>
 					<button className="see-more" onClick={gotoAbout}>
@@ -108,7 +108,7 @@ export default function Home() {
 					<div className="about-right">
 						Hi!👋🏽 <br />
 						<br />
-						My name is Okoli Ugochukwu, and I'm a Front End Engineer based in Nigeria.
+						My name is Ugochukwu Okoli, and I'm a Front End Engineer based in Nigeria.
 						<br />
 						<br /> I see myself as a passionate developer who loves coding and bringing
 						design imaginations to life. I focus more on building products using

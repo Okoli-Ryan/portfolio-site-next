@@ -11,6 +11,8 @@ import Niger from "../public/images/nigeria-svgrepo-com.svg";
 import Database from "../public/images/database-svgrepo-com.svg";
 import Rocket from "../public/images/rocket.svg";
 import Chair from "../public/images/chairs-relax-svgrepo-com.svg";
+import IG from "../public/images/instagram-new-2022-seeklogo.com.svg";
+import Crypto from "../public/images/bitcoin-svgrepo-com.svg";
 import LineChart from "../public/images/line-chart-chart-svgrepo-com.svg";
 import { motion } from "framer-motion";
 import { delayVariant } from "../variants";
@@ -147,15 +149,6 @@ const projectCategoryList = [
 		header: "React Projects",
 		projects: [
 			{
-				title: "Cake Ferries",
-				body: Cake,
-				gitLink: "https://github.com/Okoli-Ryan/cakeFerries",
-				siteLink: "https://cake-ferries-xnhn.vercel.app/",
-				disabled: false,
-				description: "A landing page + authentication page for a cake delivery company",
-				tools: ["react", "css"],
-			},
-			{
 				title: "Mailman",
 				body: Message,
 				gitLink: "https://github.com/Okoli-Ryan/Mailman",
@@ -182,6 +175,15 @@ const projectCategoryList = [
 				disabled: false,
 				description: "A four page website about space",
 				tools: ["react", "react-hooks", "framer-motion", "react-router-dom"],
+			},
+			{
+				title: "Cake Ferries",
+				body: Cake,
+				gitLink: "https://github.com/Okoli-Ryan/cakeFerries",
+				siteLink: "https://cake-ferries-xnhn.vercel.app/",
+				disabled: false,
+				description: "A landing page + authentication page for a cake delivery company",
+				tools: ["react", "css"],
 			},
 		],
 	},
@@ -231,9 +233,17 @@ const projectCategoryList = [
 		header: "React Native Projects",
 		projects: [
 			{
+				title: "RN IvoryPay",
+				body: Crypto,
+				gitLink: "https://github.com/ivorypay/React-native-ivorypay",
+				siteLink: "https://www.npmjs.com/package/react-native-ivorypay",
+				disabled: false,
+				description: "NPM package for businesses to accept crypto payment in their apps",
+				tools: ["react-native", "react-hooks", "REST", "open-source"],
+			},
+			{
 				title: "Nigerite Emenite",
 				body: NigeriteLogo,
-				// gitLink: "https://github.com/Okoli-Ryan/9japedia",
 				siteLink: "https://play.google.com/store/apps/details?id=com.etex.nigeriteetex",
 				disabled: false,
 				description: "Android and ios app for Nigerite Emenite company",
@@ -243,10 +253,11 @@ const projectCategoryList = [
 				title: "Wazobia app",
 				body: Niger,
 				gitLink: "https://github.com/Okoli-Ryan/Wazobia",
-				siteLink: "https://drive.google.com/drive/folders/1P-TXwFY0tXMU4xvfo4sk-XAYJ_DknbUT?usp=share_link",
+				siteLink:
+					"https://drive.google.com/drive/folders/1JcOIQJfw_ZNW8NgfxnGreNZGm4z_-LBl?usp=share_link",
 				disabled: false,
 				description:
-					"An Android multimedia encyclopaedia for Nigeria in its 3 main languages: Hausa, Igbo and Yoruba. *Accessible from Expo app*",
+					"An Android multimedia encyclopaedia for Nigeria in its 3 main languages: Hausa, Igbo and Yoruba.",
 				tools: [
 					"react-native",
 					"expo",
@@ -257,14 +268,21 @@ const projectCategoryList = [
 				],
 			},
 			{
-				title: "Inputpedia app",
-				body: Database,
-				gitLink: "https://github.com/Okoli-Ryan/Inputpedia",
-				siteLink: "https://drive.google.com/drive/folders/1JcOIQJfw_ZNW8NgfxnGreNZGm4z_-LBl?usp=share_link",
+				title: "Instagram Clone",
+				body: IG,
+				gitLink: "https://github.com/Okoli-Ryan/Instagram-UI-clone",
+				siteLink:
+					"https://drive.google.com/drive/folders/1P-TXwFY0tXMU4xvfo4sk-XAYJ_DknbUT?usp=share_link",
 				disabled: false,
 				description:
-					"Android Application to update and fill the database for the Wazobia app by collecting textual and audio data. *Accessible from Expo app*",
-				tools: ["react-native", "redux", "react-hooks", "firebase", "react-navigation"],
+					"An instagram clone of some of it's features and animations, using dummy data.",
+				tools: [
+					"react-native",
+					"react-hooks",
+					"react-navigation",
+					"react-native-camera",
+					"react-native-reanimated",
+				],
 			},
 		],
 	},
